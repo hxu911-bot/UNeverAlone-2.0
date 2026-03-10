@@ -154,6 +154,30 @@
 
 ---
 
+## English
+
+**Icebreaker** writes personalized recruiting emails by reading the candidate's resume and referencing their specific achievements — not generic templates.
+
+Most recruiting emails get ignored because they look like mass sends. Icebreaker reads the resume, picks out the most compelling details (a specific project, a standout metric, an unusual career move), and writes an opening that feels like it was written just for that person.
+
+**How it works:**
+1. Upload a resume (PDF / Word / screenshot) or paste plain text
+2. Choose a sender profile, writing style, and language
+3. Get 1–3 unique emails in ~30 seconds
+
+**Key features:**
+- 🧠 References specific achievements from the resume, not filler
+- 📎 Parses PDF, Word, and images (OCR)
+- 🎨 4 writing styles — professional, warm, concise, storytelling
+- 🌍 6 languages — Chinese, English, Japanese, Korean, French, Spanish
+- 👤 Multiple sender profiles (HR, executive, referral, etc.)
+- ⚡ Generates up to 3 emails in parallel, each with a different angle
+- ✏️ Edit inline, copy with one click
+
+**[Live demo → icebreaker.build](https://icebreaker.build)** · Self-hostable · MIT license
+
+---
+
 ## 🛠 本地部署
 
 ### 前置条件
