@@ -6,40 +6,219 @@
 
 *AI-powered recruiting email writer that feels personal, not templated*
 
-[![Live Demo](https://img.shields.io/badge/🌐_在线体验-icebreaker.build-blue?style=for-the-badge)](https://icebreaker.build)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-icebreaker.build-blue?style=for-the-badge)](https://icebreaker.build)
 [![GitHub Stars](https://img.shields.io/github/stars/hxu911-bot/icebreaker?style=for-the-badge&logo=github&color=gold)](https://github.com/hxu911-bot/icebreaker/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
 
-**适合：招聘 HR · 猎头 · 内推人 · 需要批量个性化触达的 Founder**
-
-[中文](#-你有没有遇到过这种情况) · [English](#english)
+[中文](#-你有没有遇到过这种情况) · [English](#-the-problem-with-template-emails)
 
 </div>
 
 ---
 
-## English
+## 😩 The Problem with Template Emails
 
-**Icebreaker** writes personalized recruiting emails by reading the candidate's resume and referencing their specific achievements — not generic templates.
+You're reaching out to dozens of candidates every day — but you're sending the same copy-pasted template to all of them. Candidates see right through it. Reply rates are dismal. You want to write something personal, but who has time to research every single resume?
 
-Most recruiting emails get ignored because they look like mass sends. Icebreaker reads the resume, picks out the most compelling details (a specific project, a standout metric, an unusual career move), and writes an opening that feels like it was written just for that person.
+**See the difference:**
 
-**How it works:**
-1. Upload a resume (PDF / Word / screenshot) or paste plain text
-2. Choose a sender profile, writing style, and language
-3. Get 1–3 unique emails in ~30 seconds
+<table>
+<tr>
+<td width="50%" align="center">
 
-**Key features:**
-- 🧠 References specific achievements from the resume, not filler
-- 📎 Parses PDF, Word, and images (OCR)
-- 🎨 4 writing styles — professional, warm, concise, storytelling
-- 🌍 6 languages — Chinese, English, Japanese, Korean, French, Spanish
-- 👤 Multiple sender profiles (HR, executive, referral, etc.)
-- ⚡ Generates up to 3 emails in parallel, each with a different angle
-- ✏️ Edit inline, copy with one click
+❌ **Generic template**
 
-**[Live demo → icebreaker.build](https://icebreaker.build)** · Self-hostable · MIT license
+</td>
+<td width="50%" align="center">
 
+✅ **Icebreaker output**
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+> Hi, we have an exciting Senior Engineer opportunity at our company with competitive compensation. Please let me know if you'd like to learn more.
+
+</td>
+<td width="50%">
+
+> *"I saw the distributed cache project you did at ByteDance — cutting P99 latency from 80ms down to 12ms. I forwarded it straight to our CTO. He told me to reach out to you first…"*
+
+</td>
+</tr>
+</table>
+
+Same candidate. Which email do you reply to?
+
+**Icebreaker reads the resume, finds the most compelling detail, and writes an opening that feels like it was written just for that person.**
+
+---
+
+## 🌐 Live Demo
+
+No setup needed — try it at **[icebreaker.build](https://icebreaker.build)**
+
+> You'll need a DashScope API Key (free tier available). Your key is stored only in your own account — it never touches our servers.
+
+---
+
+## ✨ Real-World Scenarios
+
+<table>
+<tr>
+<td width="50%">
+
+**Tech HR reaching out to a senior engineer**
+
+Candidate background:
+> Ex-ByteDance infra engineer. Led a distributed cache optimization handling 10B daily requests. 2k-star open source project.
+
+Generated opening:
+> *"I saw the distributed cache project you did at ByteDance — cutting P99 latency from 80ms down to 12ms. I forwarded it straight to our CTO. He told me to reach out to you first…"*
+
+</td>
+<td width="50%">
+
+**Employee referral reaching out to a former colleague**
+
+Candidate background:
+> Former colleague, worked on growth together, then moved to Shopee to lead SEA markets.
+
+Generated opening:
+> *"Your SEA experience at Shopee immediately made me think of the Southeast Asia push we're running right now. Honestly, you were the first person who came to mind — two years of lessons learned in that market is exactly what we need…"*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Headhunter approaching a passive candidate**
+
+Candidate background:
+> Serial entrepreneur, two 0→1 ventures, currently at a unicorn.
+
+Generated opening:
+> *"You've built from zero twice — that's rare among professional managers. Our CEO is a serial founder himself. He says he doesn't want 'managers', he wants 'builders'. You're the latter…"*
+
+</td>
+<td width="50%">
+
+**Cross-language outreach to an overseas candidate**
+
+Candidate background:
+> Chinese engineer based in Japan, published AI research papers.
+
+Generated opening (Japanese):
+> *「先日、先生の自然言語処理に関する論文を拝読いたしました。特に第三章のアテンション機構の改善手法は、私どもが直面している課題と完全に一致しており……」*
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Three Steps, 30 Seconds
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   Step 1              Step 2              Step 3           │
+│                                                             │
+│  📄 Candidate info →  ⚙️ Email settings → ✉️ Results       │
+│                                                             │
+│  · Upload resume      · Sender profile    · Edit inline    │
+│    PDF/Word/image     · Writing style     · One-click copy │
+│  · Or paste text      · Language          · Translate      │
+│                       · 1–3 emails                        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🎯 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🧠 **Deep personalization** | References specific projects, achievements, and skills from the resume — no filler |
+| 📎 **Resume parsing** | Upload PDF, Word, or screenshots; OCR extracts text automatically |
+| 🎨 **4 writing styles** | Professional · Warm · Concise · Storytelling — match the role and culture |
+| 🌍 **6 languages** | Chinese, English, Japanese, Korean, French, Spanish |
+| 👤 **Multiple sender profiles** | Save HR / interviewer / executive / referral identities, switch instantly |
+| ⚡ **Parallel generation** | Generate 1–3 emails at once, each with a different angle, no queue |
+| 🔄 **Translate anytime** | Translate any generated email to any language, one at a time or all at once |
+| ✏️ **Inline editing** | Edit the result directly, copy when ready |
+
+---
+
+## 🛠 Self-Hosting
+
+### Prerequisites
+
+- Node.js 18+
+- PostgreSQL
+- [DashScope API Key](https://dashscope.console.aliyun.com/) (free tier available for new users)
+
+### Quickstart
+
+```bash
+# 1. Clone
+git clone https://github.com/hxu911-bot/icebreaker.git
+cd icebreaker
+
+# 2. Configure environment
+cp backend/.env.example backend/.env
+# Edit backend/.env — fill in DATABASE_URL, JWT_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD
+
+# 3. Start backend (terminal 1)
+cd backend && npm install && npm run dev   # → http://localhost:3100
+
+# 4. Start frontend (terminal 2)
+cd frontend && npm install && npm run dev  # → http://localhost:5200
+```
+
+Open **http://localhost:5200** and you're good to go.
+
+---
+
+## 🧱 Tech Stack
+
+```
+Frontend          Backend           AI
+─────────         ─────────         ────────────────────────
+React 18          Express           Qwen Plus (email generation)
+Vite              TypeScript        Qwen VL Plus (image OCR)
+Tailwind CSS      Prisma            via DashScope API
+Zustand           PostgreSQL
+React Query       JWT Auth
+```
+
+---
+
+## 📁 Project Structure
+
+```
+icebreaker/
+├── backend/
+│   └── src/
+│       ├── modules/
+│       │   ├── auth/         # JWT auth + invite-code registration
+│       │   ├── profiles/     # Sender profile management
+│       │   ├── parse/        # File parsing (PDF / DOCX / OCR)
+│       │   ├── generate/     # AI email generation & translation
+│       │   └── admin/        # Admin stats
+│       └── middleware/       # Auth & error handling
+└── frontend/
+    └── src/
+        ├── components/
+        │   ├── wizard/       # 3-step wizard
+        │   ├── profile/      # Profile management
+        │   └── email/        # Email cards
+        └── store/            # Zustand state
+```
+
+---
 ---
 
 ## 😩 你有没有遇到过这种情况
@@ -197,7 +376,7 @@ cd icebreaker
 
 # 2. 配置环境变量
 cp backend/.env.example backend/.env
-# 编辑 backend/.env，填入 DATABASE_URL 和 DASHSCOPE_API_KEY
+# 编辑 backend/.env，填入 DATABASE_URL、JWT_SECRET、ADMIN_EMAIL、ADMIN_PASSWORD
 
 # 3. 启动后端（终端 1）
 cd backend && npm install && npm run dev   # → http://localhost:3100
@@ -249,6 +428,8 @@ icebreaker/
 ---
 
 <div align="center">
+
+If this helped you, a Star ⭐ means a lot — thank you!
 
 觉得有用的话，点个 Star ⭐ 是对我最大的鼓励
 
