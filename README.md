@@ -1,4 +1,4 @@
-# EmailGen — 个性化招聘邮件生成器
+# Icebreaker — 个性化招聘邮件生成器
 
 一个本地运行的 Web 工具，帮助 HR、面试官、内推人快速生成让候选人感受到被认真对待的个性化招聘邮件。
 
@@ -33,8 +33,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/hxu911-bot/UNeverAlone-2.0.git
-cd UNeverAlone-2.0
+git clone https://github.com/hxu911-bot/icebreaker.git
+cd icebreaker
 ```
 
 ### 2. 配置环境变量
@@ -97,7 +97,7 @@ Step 3: 生成结果
 ## 项目结构
 
 ```
-email-gen/
+icebreaker/
 ├── backend/
 │   ├── src/
 │   │   ├── modules/

@@ -10,7 +10,7 @@ async function main() {
   await seedAdminUser();
 
   app.listen(env.PORT, () => {
-    console.log(`[email-gen backend] Listening on http://localhost:${env.PORT}`);
+    console.log(`[icebreaker backend] Listening on http://localhost:${env.PORT}`);
   });
 }
 

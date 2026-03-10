@@ -26,6 +26,6 @@ export const useAuthStore = create<AuthState>()(
       updateUser: (user) => set({ user }),
       logout: () => set({ token: null, user: null }),
     }),
-    { name: 'email-gen-auth' }
+    { name: 'icebreaker-auth' }
   )
 );

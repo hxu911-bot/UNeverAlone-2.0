@@ -1,5 +1,5 @@
 {
-  "name": "email-gen",
+  "name": "icebreaker",
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build:frontend && npm run build:backend && npm run copy:frontend",

@@ -6,7 +6,7 @@ const api = axios.create({ baseURL: '/api' });
 // Attach JWT token on every request
 api.interceptors.request.use((config) => {
   try {
-    const raw = localStorage.getItem('email-gen-auth');
+    const raw = localStorage.getItem('icebreaker-auth');
     if (raw) {
       const state = JSON.parse(raw);
       const token = state?.state?.token;
@@ -24,7 +24,7 @@ api.interceptors.response.use(
   (res) => res,
   (err) => {
     if (err.response?.status === 401) {
-      localStorage.removeItem('email-gen-auth');
+      localStorage.removeItem('icebreaker-auth');
       window.location.href = '/login';
     }
     const message = err.response?.data?.error || err.message || 'Request failed';
