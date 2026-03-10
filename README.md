@@ -12,7 +12,33 @@
 
 **适合：招聘 HR · 猎头 · 内推人 · 需要批量个性化触达的 Founder**
 
+[中文](#-你有没有遇到过这种情况) · [English](#english)
+
 </div>
+
+---
+
+## English
+
+**Icebreaker** writes personalized recruiting emails by reading the candidate's resume and referencing their specific achievements — not generic templates.
+
+Most recruiting emails get ignored because they look like mass sends. Icebreaker reads the resume, picks out the most compelling details (a specific project, a standout metric, an unusual career move), and writes an opening that feels like it was written just for that person.
+
+**How it works:**
+1. Upload a resume (PDF / Word / screenshot) or paste plain text
+2. Choose a sender profile, writing style, and language
+3. Get 1–3 unique emails in ~30 seconds
+
+**Key features:**
+- 🧠 References specific achievements from the resume, not filler
+- 📎 Parses PDF, Word, and images (OCR)
+- 🎨 4 writing styles — professional, warm, concise, storytelling
+- 🌍 6 languages — Chinese, English, Japanese, Korean, French, Spanish
+- 👤 Multiple sender profiles (HR, executive, referral, etc.)
+- ⚡ Generates up to 3 emails in parallel, each with a different angle
+- ✏️ Edit inline, copy with one click
+
+**[Live demo → icebreaker.build](https://icebreaker.build)** · Self-hostable · MIT license
 
 ---
 
@@ -151,30 +177,6 @@
 | ⚡ **并行生成** | 一次生成 1~3 封，每封角度不同，并行执行不排队 |
 | 🔄 **随时翻译** | 生成后随时翻译到任意语言，单封或批量 |
 | ✏️ **在线编辑** | 生成结果可直接修改，满意后一键复制 |
-
----
-
-## English
-
-**Icebreaker** writes personalized recruiting emails by reading the candidate's resume and referencing their specific achievements — not generic templates.
-
-Most recruiting emails get ignored because they look like mass sends. Icebreaker reads the resume, picks out the most compelling details (a specific project, a standout metric, an unusual career move), and writes an opening that feels like it was written just for that person.
-
-**How it works:**
-1. Upload a resume (PDF / Word / screenshot) or paste plain text
-2. Choose a sender profile, writing style, and language
-3. Get 1–3 unique emails in ~30 seconds
-
-**Key features:**
-- 🧠 References specific achievements from the resume, not filler
-- 📎 Parses PDF, Word, and images (OCR)
-- 🎨 4 writing styles — professional, warm, concise, storytelling
-- 🌍 6 languages — Chinese, English, Japanese, Korean, French, Spanish
-- 👤 Multiple sender profiles (HR, executive, referral, etc.)
-- ⚡ Generates up to 3 emails in parallel, each with a different angle
-- ✏️ Edit inline, copy with one click
-
-**[Live demo → icebreaker.build](https://icebreaker.build)** · Self-hostable · MIT license
 
 ---
 
