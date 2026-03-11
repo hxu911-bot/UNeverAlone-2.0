@@ -18,6 +18,11 @@ function WizardApp() {
       <AppHeader />
 
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-8 space-y-8">
+        <div className="text-center space-y-1">
+          <h1 className="text-2xl font-bold text-gray-900">AI 招聘邮件生成器 — 让候选人感受到被认真对待</h1>
+          <p className="text-sm text-gray-400">AI-powered recruiting email writer that feels personal, not templated</p>
+        </div>
+
         <div className="flex justify-center">
           <StepIndicator current={currentStep} />
         </div>
