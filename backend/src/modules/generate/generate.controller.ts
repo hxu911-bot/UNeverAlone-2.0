@@ -31,10 +31,27 @@ generateRouter.post('/', async (req: Request, res: Response, next: NextFunction)
     });
 
     await prisma.generationLog.create({
-      data: { userId: req.user!.id, count: emails.length },
+      data: { userId: req.user!.id, count: emails.length, style: body.style },
     });
 
     res.json({ emails });
+  } catch (e) {
+    next(e);
+  }
+});
+
+generateRouter.get('/style-stats', async (_req: Request, res: Response, next: NextFunction) => {
+  try {
+    const logs = await prisma.generationLog.groupBy({
+      by: ['style'],
+      where: { style: { not: null } },
+      _sum: { count: true },
+    });
+    const stats: Record<string, number> = {};
+    for (const log of logs) {
+      if (log.style) stats[log.style] = log._sum.count ?? 0;
+    }
+    res.json(stats);
   } catch (e) {
     next(e);
   }

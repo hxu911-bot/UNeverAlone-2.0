@@ -1,4 +1,4 @@
-import { Mail, Settings, LogOut } from 'lucide-react';
+import { Mail, Settings, LogOut, MessageCircle } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useWizardStore } from '../../store/wizard';
 import { useAuthStore } from '../../store/auth';
@@ -35,6 +35,13 @@ export function AppHeader() {
               )}
             </>
           )}
+          <a
+            href="mailto:hxu911@gmail.com"
+            className="p-1.5 rounded-lg text-gray-400 hover:text-sky-600 hover:bg-sky-50 transition-colors"
+            title="Contact the author"
+          >
+            <MessageCircle className="w-4 h-4" />
+          </a>
           <Link
             to="/settings"
             className="p-1.5 rounded-lg text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors"

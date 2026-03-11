@@ -58,6 +58,8 @@ export const generateAPI = {
     api.post<{ subject: string; body: string }>('/generate/translate', {
       subject, body, targetLanguage,
     }).then((r) => r.data),
+  getStyleStats: () =>
+    api.get<Record<string, number>>('/generate/style-stats').then((r) => r.data),
 };
 
 export const adminAPI = {

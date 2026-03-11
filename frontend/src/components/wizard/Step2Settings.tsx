@@ -3,6 +3,7 @@ import { useWizardStore } from '../../store/wizard';
 import { ProfileSelector } from '../profile/ProfileSelector';
 import { STYLES, LANGUAGES } from '../../lib/styleConfig';
 import { generateAPI } from '../../api/client';
+import { useQuery } from '@tanstack/react-query';
 
 export function Step2Settings() {
   const {
@@ -15,6 +16,12 @@ export function Step2Settings() {
   } = useWizardStore();
 
   const canGenerate = selectedProfileId && selectedStyle && targetLanguage;
+
+  const { data: styleStats } = useQuery({
+    queryKey: ['style-stats'],
+    queryFn: generateAPI.getStyleStats,
+    staleTime: 30_000,
+  });
 
   async function handleGenerate() {
     setGenerating(true);
@@ -87,9 +94,14 @@ export function Step2Settings() {
                     : 'border-gray-200 hover:border-sky-300 bg-white'
                 }`}
               >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-lg">{style.icon}</span>
-                  <span className="font-medium text-sm text-gray-900">{style.name}</span>
+                <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">{style.icon}</span>
+                    <span className="font-medium text-sm text-gray-900">{style.name}</span>
+                  </div>
+                  {styleStats?.[style.id] != null && (
+                    <span className="text-xs text-gray-400">{styleStats[style.id].toLocaleString()} generated</span>
+                  )}
                 </div>
                 <p className="text-xs text-gray-400">{style.scenario}</p>
                 <p className="text-xs text-gray-500 mt-1">{style.description}</p>

@@ -54,6 +54,7 @@ model GenerationLog {
   userId    String   @map("user_id")
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   count     Int
+  style     String?
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("generation_logs")
